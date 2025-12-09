@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-6 col-lg-5">
+    <div class="card shadow-sm">
+      <div class="card-body p-4">
+        <h5 class="mb-3 text-center">Admin Login</h5>
+        <form method="post" action="{{ url_for('login') }}">
+          <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input required name="username" class="form-control" placeholder="admin@gptplpt">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Pass Key</label>
+            <input required name="password" type="password" class="form-control" placeholder="gpt155">
+          </div>
+          <button class="btn btn-dark w-100">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

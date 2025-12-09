@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+<h5 class="mb-3">Enter Marks — {{ exam.title }}</h5>
+<div class="card">
+  <div class="card-body">
+    <form method="post">
+      <div class="table-responsive">
+        <table class="table align-middle">
+          <thead>
+            <tr>
+              <th>ID</th><th>Name</th><th>Internal</th><th>External</th><th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for s in students %}
+            <tr>
+              <td>{{ s.id }}</td>
+              <td>{{ s.full_name }}</td>
+              <td style="max-width:120px"><input name="internal_{{ s.id }}" type="number" class="form-control" value="{{ s.get('internal',0) }}"></td>
+              <td style="max-width:120px"><input name="external_{{ s.id }}" type="number" class="form-control" value="{{ s.get('external',0) }}"></td>
+              <td>{{ s.get('total',0) }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <button class="btn btn-dark">Save Marks</button>
+      <a href="{{ url_for('exams_index') }}" class="btn btn-outline-secondary ms-2">Back</a>
+    </form>
+  </div>
+</div>
+{% endblock %}

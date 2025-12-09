@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row g-4">
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5>View & Update Student Data</h5>
+        <p class="text-muted">Add, edit,manage student profiles</p>
+        <a class="btn btn-outline-dark" href="{{ url_for('students') }}">Open</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5>Certifications (TC)</h5>
+        <p class="text-muted">Generate Transfer Certificate </p>
+        <a class="btn btn-outline-dark" href="{{ url_for('students') }}">Generate TC</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5>Storage Management</h5>
+        <p class="text-muted">Track branches, chairs, CCTV cameras, fans, ACs, desktops, peripherals, boards…</p>
+        <a class="btn btn-outline-dark" href="{{ url_for('inventory') }}">Open</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5>Exams & Results</h5>
+        <p class="text-muted">Manage Exams Related Data </p>
+        <a class="btn btn-outline-dark" href="{{ url_for('exams_index') }}">Open</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

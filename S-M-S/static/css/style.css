@@ -1,0 +1,6 @@
+body{ background:#f6f7f9; }
+.brand-bar{ background:#b0b3b8; color:#111; }
+.brand-bar h1{ font-size:1.25rem; margin:0; padding:0.6rem 0; letter-spacing:.5px; }
+.card{ border-radius:1rem; border:1px solid #e5e7eb; }
+.table thead th{ background:#111827; color:#fff; }
+.form-required::after{ content:' *'; color:#dc3545; }
