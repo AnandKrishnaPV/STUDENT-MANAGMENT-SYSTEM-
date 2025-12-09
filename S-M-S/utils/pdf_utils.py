@@ -23,7 +23,7 @@ def generate_tc_pdf(student_row, completion_date: str, base_dir: str) -> str:
     c.rect(margin, margin, width - 2*margin, height - 2*margin)
 
     c.setFont("Helvetica-Bold", 16)
-    title = "GOVERNMENT POLYTECHNIC PILLARIPATTU"
+    title = "NAME OF THE COLLAGE "
     c.drawCentredString(width/2, height - margin - 20, title)
 
     if student_row["photo_path"]:
