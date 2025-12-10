@@ -1,7 +1,3 @@
-# Student Management System — Government Polytechnic Pillaripattu
-
-Multi-file Flask app with SQLite and TC PDF generation.
-
 ## Admin Login
 - **Username:** `admin@gptplpt`
 - **Passkey:** `gpt155`
@@ -28,6 +24,3 @@ Open http://127.0.0.1:5000
 - Inventory: Seeded items, add/edit
 - Exams & Results: Create exams, enter internal/external, total auto-calculated
 
-### Notes
-- Keep `debug=True` only for development.
-- To reset, delete `data/sms.db`.
